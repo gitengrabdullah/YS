@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071b2b">
+  <meta name="description" content="YS Energy and Construction Global Concept — solar energy equipment, engineering, construction support, procurement and installation services in Nigeria.">
+  <title>YS Energy and Construction Global Concept</title>
+  <style>
+    :root{--navy:#071b2b;--navy2:#102f45;--gold:#e8bc58;--ink:#142b3a;--muted:#657784;--paper:#f4f7f8;--white:#fff}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.65}
+    a{color:inherit}
+    .wrap{width:min(1160px,92%);margin:auto}
+    header{background:var(--navy);color:white;position:sticky;top:0;z-index:20;box-shadow:0 4px 20px #0002}
+    .nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+    .mark{width:52px;height:52px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-weight:900;font-size:20px;flex:none}
+    .brand strong{display:block;font-size:14px;line-height:1.3;letter-spacing:.35px}
+    .brand small{display:block;color:var(--gold);font-size:10px;letter-spacing:2.5px;margin-top:4px}
+    nav{display:flex;align-items:center;gap:24px}
+    nav a{text-decoration:none;color:#eaf0f3;font-size:14px}
+    nav a:hover{color:var(--gold)}
+    .menu{display:none;background:none;border:1px solid #ffffff55;color:white;border-radius:6px;padding:8px 11px;font-size:20px}
+    .hero{color:white;min-height:610px;display:flex;align-items:center;background:linear-gradient(90deg,#041522ed 0%,#071b2bba 54%,#071b2b55 100%),url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=2000&q=85') center/cover}
+    .hero-content{padding:90px 0;max-width:760px}
+    .eyebrow{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase}
+    h1{font-size:clamp(38px,6vw,68px);line-height:1.08;margin:18px 0 22px;letter-spacing:-1.5px}
+    h1 span{color:var(--gold)}
+    .hero p{font-size:18px;color:#e2eaf0;max-width:650px;margin-bottom:30px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 22px;border-radius:5px;background:var(--gold);color:var(--navy);font-weight:800;text-decoration:none;border:1px solid var(--gold)}
+    .btn.alt{background:transparent;color:white;border-color:#ffffffaa}
+    .btn:hover{filter:brightness(1.06)}
+    section{padding:82px 0}
+    .section-head{text-align:center;max-width:720px;margin:0 auto 42px}
+    .section-head h2{font-size:clamp(28px,4vw,40px);line-height:1.2;color:var(--navy);margin:9px 0}
+    .section-head p{color:var(--muted)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+    .about-image{width:100%;height:390px;object-fit:cover;border-radius:10px}
+    .about-copy h2{font-size:36px;color:var(--navy);line-height:1.2;margin:10px 0 18px}
+    .about-copy p{color:var(--muted);margin:0 0 14px}
+    .ticks{list-style:none;margin:20px 0}
+    .ticks li{margin:9px 0;color:var(--ink)}
+    .ticks li:before{content:"✓";color:#a77b1e;font-weight:900;margin-right:10px}
+    .products{background:var(--paper)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .card{background:white;border-radius:9px;overflow:hidden;box-shadow:0 8px 28px #071b2b0c}
+    .card img{width:100%;height:210px;object-fit:cover;display:block}
+    .card-body{padding:22px}
+    .card h3{color:var(--navy);font-size:19px;margin-bottom:8px}
+    .card p{font-size:14px;color:var(--muted);margin-bottom:13px}
+    .text-link{color:#98701c;text-decoration:none;font-weight:800;font-size:14px}
+    .services{background:var(--navy);color:white}
+    .services .section-head h2{color:white}
+    .services .section-head p{color:#c6d1d9}
+    .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{padding:25px;background:var(--navy2);border:1px solid #ffffff12;border-bottom:3px solid var(--gold);border-radius:8px}
+    .service .icon{font-size:28px;color:var(--gold)}
+    .service h3{margin:10px 0 7px;font-size:19px}
+    .service p{font-size:14px;color:#c6d1d9}
+    .markets{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .market{padding:25px;background:var(--paper);border-radius:8px}
+    .market h3{color:var(--navy);margin-bottom:6px}
+    .market p{color:var(--muted);font-size:14px}
+    .cta{background:linear-gradient(110deg,#071b2b,#17445d);color:white;text-align:center;padding:65px 20px}
+    .cta h2{font-size:clamp(27px,4vw,38px);margin-bottom:10px}
+    .cta p{color:#d5e0e7;margin:0 auto 22px;max-width:680px}
+    .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px}
+    .contact-info{background:var(--navy);color:white;padding:30px;border-radius:9px}
+    .contact-info h3{font-size:23px;margin-bottom:16px}
+    .contact-info p{color:#d6e0e6;margin:13px 0;overflow-wrap:anywhere}
+    .contact-info a{color:var(--gold);text-decoration:none}
+    .form{padding:28px;border:1px solid #e0e6e9;border-radius:9px}
+    .form h3{font-size:23px;color:var(--navy);margin-bottom:15px}
+    .form label{display:block;font-size:13px;font-weight:700;margin:12px 0 5px}
+    .form input,.form textarea{width:100%;padding:13px;border:1px solid #ccd6dc;border-radius:5px;font:inherit}
+    .form textarea{min-height:125px;resize:vertical}
+    .form button{width:100%;margin-top:16px;cursor:pointer;font:inherit}
+    footer{background:#041421;color:white;padding:34px 0;text-align:center}
+    footer p{color:#b8c7d0;font-size:13px;margin-top:7px}
+    .wa-float{position:fixed;right:18px;bottom:18px;z-index:30;background:#20b966;color:white;text-decoration:none;font-weight:800;padding:13px 18px;border-radius:30px;box-shadow:0 5px 18px #0003}
+    @media(max-width:800px){
+      .menu{display:block}
+      nav{display:none;position:absolute;top:82px;left:0;right:0;background:var(--navy);padding:18px 4%;flex-direction:column;align-items:flex-start}
+      nav.open{display:flex}
+      .about-grid,.contact-grid{grid-template-columns:1fr}
+      .cards,.service-grid{grid-template-columns:repeat(2,1fr)}
+      .hero{min-height:560px}
+    }
+    @media(max-width:520px){
+      .brand strong{font-size:11px}
+      .brand small{font-size:9px}
+      .mark{width:45px;height:45px;font-size:18px}
+      .cards,.service-grid,.markets{grid-template-columns:1fr}
+      section{padding:62px 0}
+      .hero-content{padding:72px 0}
+      .hero p{font-size:16px}
+      .about-image{height:270px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="YS Energy and Construction Global Concept home">
+      <span class="mark">YS</span>
+      <span><strong>YS ENERGY AND CONSTRUCTION</strong><small>GLOBAL CONCEPT</small></span>
+    </a>
+    <button class="menu" id="menuButton" aria-label="Open navigation">☰</button>
+    <nav id="navigation">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#products">Products</a><a href="#services">Services</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-content">
+      <div class="eyebrow">Energy · Engineering · Construction</div>
+      <h1>Building Tomorrow.<br><span>Powering Today.</span></h1>
+      <p>Practical energy solutions, equipment supply, engineering support and construction services for homes, businesses and projects across Nigeria.</p>
+      <div class="actions">
+        <a class="btn" href="#products">Explore Products</a>
+        <a class="btn alt" href="#contact">Request an Enquiry</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about-grid">
+      <div>
+        <img class="about-image" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85" alt="Professional workspace">
+      </div>
+      <div class="about-copy">
+        <div class="eyebrow">Who We Are</div>
+        <h2>Solutions built around your project.</h2>
+        <p><strong>YS Energy and Construction Global Concept</strong> is focused on energy solutions, solar and electrical equipment, engineering support, construction-related services and procurement.</p>
+        <p>We aim to connect customers and project teams with suitable products and practical services, with a commitment to professionalism, dependable communication and value.</p>
+        <ul class="ticks">
+          <li>Energy equipment sourcing and supply</li>
+          <li>Solar and electrical project support</li>
+          <li>Construction materials and procurement support</li>
+          <li>Customer-focused quotations and enquiries</li>
+        </ul>
+        <a class="btn" href="#contact">Talk to Our Team</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Our Products</div><h2>Energy & Electrical Equipment</h2><p>Enquire about equipment for residential, commercial and industrial applications.</p></div>
+      <div class="cards">
+        <article class="card"><img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=900&q=85" alt="Solar panels"><div class="card-body"><h3>Solar Panels</h3><p>Solar modules for a range of power system requirements.</p><a class="text-link" href="#contact">Request a quotation →</a></div></article>
+        <article class="card"><img src="https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&w=900&q=85" alt="Power inverter equipment"><div class="card-body"><h3>Solar Inverters</h3><p>Inverter options for solar, backup and hybrid energy systems.</p><a class="text-link" href="#contact">Request a quotation →</a></div></article>
+        <article class="card"><img src="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=900&q=85" alt="Battery equipment"><div class="card-body"><h3>Lithium Batteries</h3><p>Energy storage options for backup and solar installations.</p><a class="text-link" href="#contact">Request a quotation →</a></div></article>
+        <article class="card"><img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=900&q=85" alt="Electrical power lines"><div class="card-body"><h3>Electrical Equipment</h3><p>Electrical components and accessories for project needs.</p><a class="text-link" href="#contact">Request a quotation →</a></div></article>
+        <article class="card"><img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=900&q=85" alt="Solar energy installation"><div class="card-body"><h3>Complete Solar Systems</h3><p>Equipment packages and support for different energy needs.</p><a class="text-link" href="#contact">Request a quotation →</a></div></article>
+        <article class="card"><img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&fit=crop&w=900&q=85" alt="Modern energy infrastructure"><div class="card-body"><h3>Energy Accessories</h3><p>Supporting accessories and components for energy systems.</p><a class="text-link" href="#contact">Request a quotation →</a></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">What We Do</div><h2>Our Services</h2><p>Energy, engineering and construction support under one business identity.</p></div>
+      <div class="service-grid">
+        <article class="service"><div class="icon">☀</div><h3>Renewable Energy</h3><p>Solar energy equipment, system solutions and installation support.</p></article>
+        <article class="service"><div class="icon">⚙</div><h3>Engineering Services</h3><p>Technical coordination, project support and engineering solutions.</p></article>
+        <article class="service"><div class="icon">⌂</div><h3>Construction Support</h3><p>Construction-related services, materials sourcing and project support.</p></article>
+        <article class="service"><div class="icon">ϟ</div><h3>Electrical Solutions</h3><p>Electrical equipment supply and installation-related services.</p></article>
+        <article class="service"><div class="icon">▣</div><h3>Procurement & Supply</h3><p>Sourcing and supply coordination for equipment and project materials.</p></article>
+        <article class="service"><div class="icon">🔧</div><h3>Maintenance Support</h3><p>Maintenance and after-sales support enquiries for installed systems.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Who We Serve</div><h2>Supporting Different Sectors</h2><p>We welcome enquiries from individuals, businesses and project professionals.</p></div>
+      <div class="markets">
+        <div class="market"><h3>Residential</h3><p>Homeowners seeking solar, backup power and electrical equipment.</p></div>
+        <div class="market"><h3>Commercial</h3><p>Businesses, offices, shops and commercial property operators.</p></div>
+        <div class="market"><h3>Industrial & Projects</h3><p>Contractors, installers, project teams and industrial customers.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta"><h2>Have a project or equipment enquiry?</h2><p>Contact YS Energy and Construction Global Concept to discuss your requirements and request a quotation.</p><a class="btn" href="#contact">Contact Us</a></div>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Get In Touch</div><h2>Let's Discuss Your Requirements</h2><p>Send us an enquiry through WhatsApp or contact us directly by email.</p></div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>YS Energy and Construction Global Concept</h3>
+          <p><strong>WhatsApp / Phone</strong><br><a href="https://wa.me/2348130736511">+234 813 073 6511</a></p>
+          <p><strong>Email</strong><br><a href="mailto:albania4647@gmail.com">albania4647@gmail.com</a></p>
+          <p><strong>Location</strong><br>Nigeria</p>
+          <p>For product availability, pricing, project support and business enquiries, please contact us.</p>
+        </div>
+        <form class="form" id="enquiryForm">
+          <h3>Send a WhatsApp Enquiry</h3>
+          <label for="customerName">Your name</label><input id="customerName" name="name" autocomplete="name" required placeholder="Enter your name">
+          <label for="customerPhone">Your phone number</label><input id="customerPhone" name="phone" autocomplete="tel" required placeholder="Enter your phone number">
+          <label for="customerEmail">Your email (optional)</label><input id="customerEmail" name="email" type="email" autocomplete="email" placeholder="Enter your email">
+          <label for="customerMessage">How can we help?</label><textarea id="customerMessage" name="message" required placeholder="Tell us about the product or service you need"></textarea>
+          <button class="btn" type="submit">Send Enquiry on WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="brand" style="justify-content:center">
+      <span class="mark">YS</span><span><strong>YS ENERGY AND CONSTRUCTION</strong><small>GLOBAL CONCEPT</small></span>
+    </div>
+    <p>Building Tomorrow. Powering Today.</p>
+    <p>© <span id="year"></span> YS Energy and Construction Global Concept. All rights reserved.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/2348130736511" target="_blank" rel="noopener">WhatsApp Us</a>
+<script>
+  const menuButton=document.getElementById('menuButton');
+  const navigation=document.getElementById('navigation');
+  menuButton.addEventListener('click',()=>navigation.classList.toggle('open'));
+  navigation.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>navigation.classList.remove('open')));
+  document.getElementById('year').textContent=new Date().getFullYear();
+  document.getElementById('enquiryForm').addEventListener('submit',function(event){
+    event.preventDefault();
+    const name=document.getElementById('customerName').value.trim();
+    const phone=document.getElementById('customerPhone').value.trim();
+    const email=document.getElementById('customerEmail').value.trim();
+    const message=document.getElementById('customerMessage').value.trim();
+    const body=`YS ENERGY AND CONSTRUCTION GLOBAL CONCEPT — NEW ENQUIRY\n\nName: ${name}\nPhone: ${phone}\nEmail: ${email || 'Not provided'}\n\nEnquiry: ${message}`;
+    window.open('https://wa.me/2348130736511?text='+encodeURIComponent(body),'_blank','noopener');
+  });
+</script>
+</body>
+</html>
